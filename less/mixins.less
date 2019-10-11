@@ -9,14 +9,17 @@
   width: @width;
   height: 45;
   color: @txtColor;
-  border-radius: 8%;
+  border-radius: 3%;
   text-align: center;
 }
 
-// mix-ins for border and paddiing
+// mix-ins for border and paddiing, & mobile margin
 .border() {
   border-top: 1px solid @main-border-color;
 }
 .paddingCont() {
   padding: 2% 2% 2%;
+}
+.mobileMar() {
+  margin: 2% auto;
 }
