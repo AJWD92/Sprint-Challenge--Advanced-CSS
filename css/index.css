@@ -200,11 +200,29 @@ footer {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .home .intro {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .home .intro img {
   margin: 2% 0 0;
 }
+@media (max-width: 500px) {
+  .home .intro img {
+    width: 70%;
+    margin: 1% auto;
+  }
+}
 .home .intro h2 {
   padding: 15px;
+}
+@media (max-width: 500px) {
+  .home .intro h2 {
+    width: 70%;
+    margin: 0 auto;
+  }
 }
 .home .intro p {
   padding: 0 15px;
