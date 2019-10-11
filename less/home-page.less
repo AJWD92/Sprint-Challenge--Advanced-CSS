@@ -1,17 +1,17 @@
 // Home Content
 
 .home {
-
   .intro {
-
+    img {
+      margin: 2% 0 0;
+    }
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
   }
 
   .space-images {
@@ -41,7 +41,7 @@
 
   .walk {
     margin-top: 60px;
-    border-top: 1px solid @main-border-color;
+    .border();
     padding: 50px 60px;
     display: flex;
     justify-content: center;
@@ -58,13 +58,20 @@
       }
 
       .btn {
+        .customBtn(#000, 35%, #fff);
+        font-size: 2.5rem;
+        .paddingCont();
+        &:hover {
+          .customBtn(#8b0000, 35%, #000);
+          .paddingCont();
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
@@ -72,4 +79,4 @@
       }
     }
   }
-}// home
+} // home

@@ -1,1 +1,22 @@
 // Mixins Here
+
+// Parametric mix-ins for buttons
+.customBtn(@bgColor, @width, @txtColor) {
+  display: block;
+  background-color: @bgColor;
+  margin: 0 2% 60%;
+  cursor: pointer;
+  width: @width;
+  height: 45;
+  color: @txtColor;
+  border-radius: 8%;
+  text-align: center;
+}
+
+// mix-ins for border and paddiing
+.border() {
+  border-top: 1px solid @main-border-color;
+}
+.paddingCont() {
+  padding: 2% 2% 2%;
+}

@@ -135,7 +135,7 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
+  color: #5e6164;
 }
 h1,
 h2,
@@ -143,7 +143,7 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: #23293B;
+  color: #23293b;
 }
 h2 {
   font-size: 3.2rem;
@@ -160,6 +160,36 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.topNav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.topNav h1 {
+  font-size: 4.5rem;
+  margin: 1% 0 1%;
+}
+@media (max-width: 500px) {
+  .topNav h1 {
+    width: 60%;
+  }
+}
+.topNav nav {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .topNav nav {
+    width: 80%;
+  }
+}
+.topNav nav a {
+  text-decoration: none;
+  font-size: 1.8rem;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -169,6 +199,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .intro img {
+  margin: 2% 0 0;
 }
 .home .intro h2 {
   padding: 15px;
@@ -211,6 +244,31 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  display: block;
+  background-color: #000;
+  margin: 0 2% 60%;
+  cursor: pointer;
+  width: 35%;
+  height: 45;
+  color: #fff;
+  border-radius: 8%;
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 2% 2% 2%;
+}
+.home .walk .walk-text .btn:hover {
+  display: block;
+  background-color: #8b0000;
+  margin: 0 2% 60%;
+  cursor: pointer;
+  width: 35%;
+  height: 45;
+  color: #000;
+  border-radius: 8%;
+  text-align: center;
+  padding: 2% 2% 2%;
 }
 .home .walk .walk-img {
   width: 46%;
