@@ -1,17 +1,40 @@
 // Home Content
 
 .home {
-
   .intro {
-
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+    }
+    .head {
+      width: 100%;
+      @media @mobile {
+        width: 95%;
+        .mobileMar();
+      }
+    }
+    img {
+      margin: 2% 0 0;
+      @media @mobile {
+        width: 100%;
+        .mobileMar();
+      }
+    }
     h2 {
       padding: 15px;
+      @media @mobile {
+        width: 100%;
+        .mobileMar();
+      }
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
+      @media @mobile {
+        width: 100%;
+        .mobileMar();
+      }
     }
-  
   }
 
   .space-images {
@@ -24,6 +47,20 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @mobile {
+        width: 75%;
+        .mobileMar();
+      }
+    }
+    .sky {
+      @media @mobile {
+        display: none;
+      }
+    }
+    .launch {
+      @media @mobile {
+        display: none;
+      }
     }
   }
 
@@ -32,44 +69,93 @@
 
     h3 {
       margin-top: 11px;
+      @media @mobile {
+        width: 75%;
+        .mobileMar();
+      }
     }
 
     p {
       margin-top: 13px;
+      @media @mobile {
+        width: 75%;
+        .mobileMar();
+      }
     }
   }
 
   .walk {
     margin-top: 60px;
-    border-top: 1px solid @main-border-color;
+    .border();
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100%;
+    }
     .walk-text {
       width: 50%;
+      @media @mobile {
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
+        @media @mobile {
+          width: 100%;
+          .mobileMar();
+        }
       }
 
       p {
         margin-bottom: 26px;
+        @media @mobile {
+          width: 100%;
+          .mobileMar();
+        }
       }
 
       .btn {
+        .customBtn(#000, 35%, #fff);
+        font-size: 2.5rem;
+        .paddingCont();
+        @media @mobile {
+          width: 100%;
+          .paddingCont();
+          .mobileMar();
+          &:tap {
+            .customBtn(#0e0d0d, 35%, #000);
+            .paddingCont();
+          }
+        }
+        &:hover {
+          .customBtn(#8b0000, 35%, #000);
+          .paddingCont();
+          @media @mobile {
+            width: 100%;
+          }
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
+      @media @mobile {
+        width: 100%;
+        .mobileMar();
+      }
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+        @media @mobile {
+          width: 100%;
+        }
       }
     }
   }
-}// home
+} // home
